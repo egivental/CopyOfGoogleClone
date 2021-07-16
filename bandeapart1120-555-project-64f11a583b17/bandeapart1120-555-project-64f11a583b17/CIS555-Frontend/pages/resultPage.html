@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<head>
+  <title>Results</title>
+  <meta charset="utf-8">
+  <title>Penn Google search result page</title>
+  <!--Google Fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <!--Font Awesome-->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/resultPage.css">
+</head>
+  <style>
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=88);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 10%;
+            left: 25%;
+            width: 55%;
+            height: 400px;
+            padding: 20px;
+            border: 10px solid orange;
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+  <div class="serp">
+    <div class="serp__layout">
+      <div class="serp__header">
+        <div class="serp__search">
+          <form class="serp__form" action="/resultPage.html" methode="GET">
+            <div>
+              ^&*for_input^&*
+              <!-- <input name="query" type="search" class="serp__query" maxlength="512" autocomplete="off" title="Search" aria-label="Search" dir="ltr" spellcheck="false" autofocus="autofocus" placeholder="Type things you want to search"></input> -->
+            </div>
+            <button class="serp__button" aria-label="Search" type="submit">
+              <div><i class="fa fa-search "></i></div>
+            </button>
+          </form>
+        </div>
+        <!-- <a class="serp__logo" href="/"></a> -->
+        <!-- <ul class="serp__nav">
+          <li class="serp__active"><a href="/">Web</a></li>
+          <li><a href="/">Images</a></li>
+          <li><a href="/">Videos</a></li>
+          <li><a href="/">News</a></li>
+        </ul> -->
+      <!-- </div> -->
+    </div>
+    <div class="serp__body">
+      <div class="serp__main serp__results">
+        <div class="serp__web">
+          <span class="serp__label">Web Results</span>
+          ^&*for_search^&*
+        </div>
+      </div>
+      ^&*for_wheather^&*
+    </div>
+    ^&*for_page_number^&*
+    <div class="serp__footer">
+      <div class="serp__bottom">
+        <ul class="serp__links">
+          <li><a href="#">Xinting Gu</a></li>
+          <li><a href="#">Yankai Liu</a></li>
+          <li><a href="#">Yue Zhou</a></li>
+          <li><a href="#">Emile Givental</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body></html>
