@@ -24,7 +24,7 @@ public class WordIndexController {
 	private static final String JDBC_HOST = "searchengine-dev.cfy6nalba13c.us-east-1.rds.amazonaws.com";
 	private static final String JDBC_URL = "jdbc:mysql://" + JDBC_HOST + "/" + DATABASE_NAME;
 	private static final String JDBC_USER = "admin";
-	private static final String JDBC_PASSWORD = "cis555cis555";
+	private static final String JDBC_PASSWORD = "HIDDEN FOR PUBLIC";
 	private static final DataSource ds = getDataSource();
 	
 	private static final DataSource getDataSource() {
